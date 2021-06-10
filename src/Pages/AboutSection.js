@@ -27,7 +27,7 @@ export const AboutSection = props => (
             <Row style={{marginTop:"3em"}}>
                 <Col lg={true}>
                     <h1>Hi, I'm Keegan,</h1>
-                    <h1>Full Stack Developer</h1>
+                    <h1>Front-End Developer</h1>
                     <p class="spacing">
                         Amet minim mollit non deserunt ullamco 
                         est sit aliqua dolor do amet sint. Velit 
