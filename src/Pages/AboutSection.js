@@ -15,6 +15,8 @@ const Styles = styled.div`
     display:block;
     margin-left:auto;
     margin-right:auto;
+    border:solid;
+    border-color:tan;
 }
 
 `

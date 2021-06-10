@@ -9,11 +9,10 @@ const Styles = styled.div`
         color:white;
         
     }
-   
   
 `
 
-function Navigation () {
+export const Navigation = props => {
     return(
         <Styles>
             <Navbar className="navbar-custom  " variant="light" expand="lg">
