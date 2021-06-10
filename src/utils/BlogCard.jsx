@@ -31,8 +31,6 @@ export const BlogCard = props => (
             </p>
 
             </Card>
-           
-
         </Layout>
     </Styles>
 )
