@@ -24,7 +24,7 @@ const Styles = styled.div`
 export const AboutSection = props => (
     <Styles>
         <Layout>
-            <Row style={{marginTop:"3em"}}>
+            <Row style={{marginTop:"5em",marginBottom:"5em"}}>
                 <Col lg={true}>
                     <h1>Hi, I'm Keegan,</h1>
                     <h1>Front-End Developer</h1>
