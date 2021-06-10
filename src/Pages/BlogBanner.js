@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from './Layout';
-import { Row, Col, Container, Jumbotron } from 'react-bootstrap';
+import { Row, Col, Jumbotron } from 'react-bootstrap';
 import styled from 'styled-components';
 import { BlogCard } from '../utils/BlogCard';
 
@@ -11,7 +11,7 @@ const Styles = styled.div`
 }
 
 .jumob{
-    background-color:;
+    background-color:#A0C1D1;
 }
 .ctColor{
     background-color:red;

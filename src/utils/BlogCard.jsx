@@ -13,9 +13,12 @@ const Styles = styled.div`
     maring-right:.5em;
 }
 .bodySpace{
-    margin-left:.5em;
-    maring-right:.5em;
+    margin-left:1em;
+    maring-right:1em;
 
+}
+.txtColor{
+    color:#A0C1D1;
 }
 
 `
@@ -25,7 +28,7 @@ export const BlogCard = props => (
         <Layout>
             <Card>
             <h1 class="headerSpacing">{props.Header}</h1>
-            <h3 class="bodySpace">{props.Date}</h3>
+            <h6 class="bodySpace txtColor">{props.Date}</h6>
             <p class="bodySpace">
                 {props.text}
             </p>

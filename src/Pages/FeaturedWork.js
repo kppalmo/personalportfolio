@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import { Layout } from './Layout';
 import { BlogCard } from '../utils/BlogCard';
 

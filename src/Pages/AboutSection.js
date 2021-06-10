@@ -16,7 +16,10 @@ const Styles = styled.div`
     margin-left:auto;
     margin-right:auto;
     border:solid;
-    border-color:tan;
+    border-color:#A0C1D1;
+}
+.txtColor{
+    color:#A0C1D1;
 }
 
 `
@@ -24,10 +27,10 @@ const Styles = styled.div`
 export const AboutSection = props => (
     <Styles>
         <Layout>
-            <Row style={{marginTop:"5em",marginBottom:"5em"}}>
+            <Row style={{marginTop:"6em",marginBottom:"6em"}}>
                 <Col lg={true}>
                     <h1>Hi, I'm Keegan,</h1>
-                    <h1>Front-End Developer</h1>
+                    <h1 class="txtColor">Front-End Developer</h1>
                     <p class="spacing">
                         Amet minim mollit non deserunt ullamco 
                         est sit aliqua dolor do amet sint. Velit 

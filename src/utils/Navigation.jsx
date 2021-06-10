@@ -10,7 +10,7 @@ const Styles = styled.div`
         
     }
     .homeLogo{
-        width:7%;
+        width:5%;
         margin-left:.5em;
     }
   

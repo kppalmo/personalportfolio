@@ -1,7 +1,6 @@
 import React from 'react';
-import { AboutSection } from './Pages/AboutSection';
-import { BlogBanner } from './Pages/BlogBanner';
-import { FeaturedWork } from './Pages/FeaturedWork';
+import { LandingPage } from './Pages/LandingPage';
+import { Footer } from './utils/Footer';
 import { Navigation } from './utils/Navigation';
 
 
@@ -10,11 +9,9 @@ class App extends React.Component{
     return(
       <>
       <Navigation/>
-      <AboutSection/>
-      <BlogBanner/>
-      <FeaturedWork/>
+      <LandingPage/>
+      <Footer/>
       </>
-      
     )
   }
 }
