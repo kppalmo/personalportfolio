@@ -7,7 +7,7 @@ import { BlogCard } from '../utils/BlogCard';
 
 const Styles = styled.div`
 .spacing{
-    margin-top:2em;
+    margin-top:2em
 }
 
 .jumob{
@@ -32,7 +32,7 @@ export const BlogBanner = props => (
                         <Col lg={true} >
                             <BlogCard 
                             Header="Making a design system from scratch"
-                            Date="12 Feb 2020 | Design, Pattern"
+                            Date="23 June 2021 | Update"
                             text="Lorem ipsum dolor sit amet consectetur, 
                             adipisicing elit. Aliquam eum reiciendis sint! 
                             Officia fuga rem iure commodi dolore maiores nobis!"/>

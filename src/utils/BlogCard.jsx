@@ -14,7 +14,7 @@ const Styles = styled.div`
 }
 .bodySpace{
     margin-left:1em;
-    maring-right:1em;
+    margin-right:1em;
 
 }
 .txtColor{
