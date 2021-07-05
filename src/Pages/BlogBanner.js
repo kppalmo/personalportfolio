@@ -1,6 +1,5 @@
 import React from 'react';
-import { Layout } from './Layout';
-import { Row, Col, Jumbotron } from 'react-bootstrap';
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import styled from 'styled-components';
 import { BlogCard } from '../utils/BlogCard';
 
@@ -14,7 +13,6 @@ const Styles = styled.div`
     background-color:#A0C1D1;
 }
 .ctColor{
-    background-color:red;
 }
 
 .textSizing{
@@ -26,7 +24,7 @@ const Styles = styled.div`
 export const BlogBanner = props => (
     <Styles>
         <Jumbotron className="jumob spacing">
-            <Layout className="ctColor">
+            <Container className="ctColor">
                 <h5>Recent Posts</h5>
                   <Row className="spacing">
                         <Col lg={true} >
@@ -46,7 +44,7 @@ export const BlogBanner = props => (
                             Officia fuga rem iure commodi dolore maiores nobis!"/>
                         </Col>
                     </Row>
-                </Layout>
+                </Container>
                 </Jumbotron>
 
     </Styles>

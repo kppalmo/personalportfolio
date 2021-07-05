@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card } from 'react-bootstrap';
-import { Layout } from '../Pages/Layout';
+import { Card, Container } from 'react-bootstrap';
 
 const Styles = styled.div`
 .cardStlye{
@@ -9,11 +8,10 @@ const Styles = styled.div`
 }
 .headerSpacing{
     margin-top:.5em;
-    margin-left:.5em;
-    maring-right:.5em;
+    margin-left:1vh;
 }
 .bodySpace{
-    margin-left:1em;
+    margin-left:1vh;
     margin-right:1em;
 
 }
@@ -25,7 +23,7 @@ const Styles = styled.div`
 
 export const BlogCard = props => (
     <Styles>
-        <Layout>
+        <Container>
             <Card>
             <h1 class="headerSpacing">{props.Header}</h1>
             <h6 class="bodySpace txtColor">{props.Date}</h6>
@@ -34,6 +32,6 @@ export const BlogCard = props => (
             </p>
 
             </Card>
-        </Layout>
+        </Container>
     </Styles>
 )

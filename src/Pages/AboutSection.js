@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Row, Col, Image } from 'react-bootstrap';
-import { Layout } from './Layout';
+import {Container, Row, Col, Image } from 'react-bootstrap';
 import profilePic from '../img/profilePic.jpg';
 
 
@@ -26,7 +25,7 @@ const Styles = styled.div`
 
 export const AboutSection = props => (
     <Styles>
-        <Layout>
+        <Container>
             <Row style={{marginTop:"6em",marginBottom:"6em"}}>
                 <Col lg={true}>
                     <h1>Hi, I'm Keegan,</h1>
@@ -46,7 +45,7 @@ export const AboutSection = props => (
                     <Image src={profilePic} alt="profileIMG" className="IMGSizing" roundedCircle />
                 </Col>
             </Row>
-        </Layout>
+        </Container>
     </Styles>
 
 )

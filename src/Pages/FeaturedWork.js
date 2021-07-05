@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Row } from 'react-bootstrap';
-import { Layout } from './Layout';
+import { Container, Row } from 'react-bootstrap';
 import { BlogCard } from '../utils/BlogCard';
 
 const Styles = styled.div`
@@ -17,7 +16,7 @@ const Styles = styled.div`
 
 export const FeaturedWork = props =>(
     <Styles>
-        <Layout>
+        <Container>
             <h3 class="headerText">Featured Work</h3>
             <Row className="cardSpacing">
                 <BlogCard
@@ -51,6 +50,6 @@ export const FeaturedWork = props =>(
            
             
 
-        </Layout>
+        </Container>
     </Styles>
 )

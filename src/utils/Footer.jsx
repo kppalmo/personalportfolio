@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Image , Row, Col } from 'react-bootstrap';
 
 
 const Styles = styled.div `
