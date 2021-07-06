@@ -22,7 +22,7 @@ export const FeaturedWork = props =>(
                 <BlogCard
                 Header="Test"
                 Date="Oct"
-                text='Lorem ipsum dolor sit amet consectetur, 
+                Text='Lorem ipsum dolor sit amet consectetur, 
                 adipisicing elit. Aliquam eum reiciendis sint! 
                 Officia fuga rem iure commodi dolore maiores nobis!'
                 />
@@ -31,7 +31,7 @@ export const FeaturedWork = props =>(
                 <BlogCard
                 Header="Designing Dashboards"
                 Date="Oct"
-                text='Lorem ipsum dolor sit amet consectetur, 
+                Text='Lorem ipsum dolor sit amet consectetur, 
                 adipisicing elit. Aliquam eum reiciendis sint! 
                 Officia fuga rem iure commodi dolore maiores nobis!'
                 />
@@ -40,16 +40,11 @@ export const FeaturedWork = props =>(
             <BlogCard
                 Header="Vibrant Portraits of 2020"
                 Date="Oct"
-                text='Lorem ipsum dolor sit amet consectetur, 
+                Text='Lorem ipsum dolor sit amet consectetur, 
                 adipisicing elit. Aliquam eum reiciendis sint! 
                 Officia fuga rem iure commodi dolore maiores nobis!'
                 />
-
-
            </Row>
-           
-            
-
         </Container>
     </Styles>
 )

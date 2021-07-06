@@ -11,8 +11,9 @@ const Styles = styled.div`
 
 .jumob{
     background-color:#A0C1D1;
-}
-.ctColor{
+    box-shadow:0px 0px 20px #000;
+    height:50vh;
+
 }
 
 .textSizing{
@@ -24,14 +25,14 @@ const Styles = styled.div`
 export const BlogBanner = props => (
     <Styles>
         <Jumbotron className="jumob spacing">
-            <Container className="ctColor">
+            <Container>
                 <h5>Recent Posts</h5>
                   <Row className="spacing">
                         <Col lg={true} >
                             <BlogCard 
                             Header="Making a design system from scratch"
                             Date="23 June 2021 | Update"
-                            text="Lorem ipsum dolor sit amet consectetur, 
+                            Text="Lorem ipsum dolor sit amet consectetur, 
                             adipisicing elit. Aliquam eum reiciendis sint! 
                             Officia fuga rem iure commodi dolore maiores nobis!"/>
                         </Col>
@@ -39,7 +40,7 @@ export const BlogBanner = props => (
                             <BlogCard 
                             Header="Creating pixel perfect icons in Figma"
                             Date="12 Feb 2020 | Design, Pattern"
-                            text="Lorem ipsum dolor sit amet consectetur, 
+                            Text="Lorem ipsum dolor sit amet consectetur, 
                             adipisicing elit. Aliquam eum reiciendis sint! 
                             Officia fuga rem iure commodi dolore maiores nobis!"/>
                         </Col>

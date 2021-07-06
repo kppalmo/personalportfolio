@@ -28,7 +28,7 @@ export const BlogCard = props => (
             <h1 class="headerSpacing">{props.Header}</h1>
             <h6 class="bodySpace txtColor">{props.Date}</h6>
             <p class="bodySpace">
-                {props.text}
+                {props.Text}
             </p>
 
             </Card>

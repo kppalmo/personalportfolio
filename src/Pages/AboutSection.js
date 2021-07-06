@@ -20,12 +20,21 @@ const Styles = styled.div`
 .txtColor{
     color:#A0C1D1;
 }
+.about-main-cont{
+    margin-bottom:10em;
+}
+.btn-about{
+    margin-top:1em;
+    background-color: white;
+    color: black;
+    border: 2px solid #A0C1D1; /* Green */
+}
 
 `
 
 export const AboutSection = props => (
     <Styles>
-        <Container>
+        <Container className="about-main-cont">
             <Row style={{marginTop:"6em",marginBottom:"6em"}}>
                 <Col lg={true}>
                     <h1>Hi, I'm Keegan,</h1>
@@ -37,8 +46,8 @@ export const AboutSection = props => (
                         Exercitation veniam consequat sunt 
                         nostrud amet.
                     </p>
-                    <button style={{marginTop:"1em"}}>
-                        LearnMore!
+                    <button class="btn-about">
+                        Learn More!
                     </button>
                 </Col>
                 <Col lg={true}>
