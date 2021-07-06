@@ -9,7 +9,7 @@ import  back2 from '../img/back2.jpg';
 const Styles = styled.div`
 .swiper-container {
     width: 100%;
-    height: 50vh;
+    height: 75vh;
   }
   
   .swiper-slide {
@@ -38,6 +38,7 @@ const Styles = styled.div`
     height: 100%;
     object-fit: cover;
     object-position:center;
+
   }
 
 
