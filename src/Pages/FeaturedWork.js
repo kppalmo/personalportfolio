@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Row } from 'react-bootstrap';
 import { BlogCard } from '../utils/BlogCard';
+import {ImgSlider } from '../utils/ImgSlider';
+
 
 const Styles = styled.div`
 .headerText{
@@ -16,6 +18,7 @@ const Styles = styled.div`
 
 export const FeaturedWork = props =>(
     <Styles>
+        <ImgSlider/>
         <Container>
             <h3 class="headerText">Featured Work</h3>
             <Row className="cardSpacing">
