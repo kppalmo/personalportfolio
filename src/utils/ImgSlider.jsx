@@ -9,7 +9,7 @@ import  back2 from '../img/back2.jpg';
 const Styles = styled.div`
 .swiper-container {
     width: 100%;
-    height: 75vh;
+    height: 45vh;
   }
   
   .swiper-slide {
@@ -37,8 +37,11 @@ const Styles = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position:center;
+    object-position: 0% 30%;
 
+  }
+  .text-swipe{
+    position:absolute;
   }
 
 
@@ -48,7 +51,10 @@ const Styles = styled.div`
 export const ImgSlider = () => (
     <Styles>
         <Swiper className="mySwiper">
-            <SwiperSlide><Image src={back1}/></SwiperSlide>
+            <SwiperSlide>
+              <h1 class="text-swipe">Keegan Palmo Rocks!</h1>
+              <Image src={back1}/>
+            </SwiperSlide>
             <SwiperSlide><Image src={back2}/></SwiperSlide>
         </Swiper>
     </Styles>
