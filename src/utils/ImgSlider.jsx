@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import  back1 from '../img/back1.jpg';
 import  back2 from '../img/back2.jpg';
+import { useSpring, animated } from 'react-spring';
+import VisibilitySensor from "react-visibility-sensor-v2";
 
 const Styles = styled.div`
 .swiper-container {
@@ -48,14 +50,28 @@ const Styles = styled.div`
 
 `
 
-export const ImgSlider = () => (
-    <Styles>
-        <Swiper className="mySwiper">
-            <SwiperSlide>
-              <h1 class="text-swipe">Keegan Palmo Rocks!</h1>
-              <Image src={back1}/>
-            </SwiperSlide>
-            <SwiperSlide><Image src={back2}/></SwiperSlide>
-        </Swiper>
-    </Styles>
-)
+export const ImgSlider = () => {
+  const tAnima = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, config: {duration:1500}})
+
+  return(
+    <VisibilitySensor partialVisibility>
+    {({ isVisible }) => (
+      <animated.div style={tAnima}>
+
+      <Styles>
+          <Swiper className="mySwiper">
+              <SwiperSlide>
+                <h1 class="text-swipe">Keegan Palmo Rocks!</h1>
+                <Image src={back1}/>
+              </SwiperSlide>
+              <SwiperSlide><Image src={back2}/></SwiperSlide>
+          </Swiper>
+      </Styles>
+      </animated.div>
+      
+    )}
+  </VisibilitySensor>
+    
+  )
+}
+    
