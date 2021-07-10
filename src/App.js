@@ -1,17 +1,19 @@
 import React from 'react';
-import { LandingPage } from './Pages/LandingPage';
-import { Footer } from './utils/Footer';
-import { Navigation } from './utils/Navigation';
-import ContactUs from './utils/ContactUs';
+import 'bootstrap/dist/css/bootstrap.css';
+import MAINPAGE from './Pages/MAINPAGE';
+import ESent from './Pages/ESent';
+import { BrowserRouter , Route, Switch } from 'react-router-dom';
 
 class App extends React.Component{
   render(){
     return(
       <>
-      <Navigation/>
-      <LandingPage/>
-      <ContactUs/>
-      <Footer/>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={MAINPAGE} />
+            <Route exact path="/esent" component={ESent} />
+          </Switch>
+        </BrowserRouter>
       </>
     )
   }
