@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Image } from 'react-bootstrap';
+import { Container, Row, Image, Button } from 'react-bootstrap';
 import thanks from '../img/Thanks.png';
 import styled from 'styled-components';
 
@@ -22,6 +22,10 @@ const Styles = styled.div`
     margin-right:auto;
     margin-bottom:5vh;
 }
+.back-button{
+    margin-left:45%;
+    margin-bottom:2vh;
+}
 `
 
 export const ESent = props => (
@@ -33,7 +37,14 @@ export const ESent = props => (
             <Row>
                 <Image src={thanks} className="thanks-img"/>
             </Row>
-        </Container>        
+            <a href="/">
+        <Button className="back-button">
+            Home Page
+        </Button>     
+        </a>
+        </Container>
+        
+   
     </Styles>
 )
 export default ESent;
