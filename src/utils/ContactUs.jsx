@@ -64,9 +64,9 @@ export default function ContactUs() {
           value="Send" 
           onClick={event =>  window.location.href='/esent'}
           className="contact-sub"
-        >
+      >
           Submit
-        </Button>
+      </Button>
       </Row>    
     </Form>
     </Container>

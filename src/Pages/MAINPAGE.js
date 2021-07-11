@@ -7,10 +7,7 @@ import ContactUs from '../utils/ContactUs';
 export const MAINPAGE = () => (
 
     <>
-    <Navigation/>
-    <LandingPage/>
     <ContactUs/>
-    <Footer/>
     </>
 
 )
