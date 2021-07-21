@@ -1,11 +1,10 @@
 import React from 'react';
-
-import ContactUs from '../utils/ContactUs';
+import { LandingPage } from './LandingPage'
 
 export const MAINPAGE = () => (
 
     <>
-    <ContactUs/>
+    <LandingPage/>
     </>
 
 )
